@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
+    <form action="https://formspree.io/mrgawwzw" method="POST">
         <div>
             <label for="name">Enter Your Name *</label>
-            <input id="name" required>
+            <input id="name" name="name" required>
         </div>
         <div>
             <label for="email">Enter Your Email *</label>
-            <input id="email" type="email" required>
+            <input id="email" type="email" name="email" required>
         </div>
         <div>
             <label for="department">Pick Your Department *</label>
             <div class="selectWrapper">
-                <select id="department">
+                <select id="department" name="department">
                     <option>Sales</option>
                     <option>Marketing</option>
                     <option>Development</option>
@@ -30,7 +30,7 @@
         </div>
         <div>
             <label for="message">Enter Your Message *</label>
-            <textarea id="message" required></textarea>
+            <textarea id="message" name="message" required></textarea>
         </div>
         <div class="button-container">
             <button>Send</button>
