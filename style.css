@@ -63,3 +63,20 @@ button {
     display: flex;
     justify-content: flex-end;
 }
+
+.selectWrapper {
+    position: relative;
+} 
+.selectWrapper:after {
+    content: '>';
+    font: 17px "Consolas", monospace;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    pointer-events: none;
+
+    right: 10px;
+    bottom: 30px;
+}
