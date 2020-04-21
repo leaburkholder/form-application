@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <form>
+        <div>
+            <label for="name">Enter Your Name</label>
+            <input id="name" required>
+        </div>
+        <div>
+            <label for="email">Enter Your Email</label>
+            <input id="email" type="email" required>
+        </div>
+        <div>
+            <label for="department">Pick Your Department</label>
+            <select id="department">
+                <option>Sales</option>
+                <option>Marketing</option>
+                <option>Development</option>
+                <option>Operations</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Enter Your Message</label>
+            <textarea id="message" required></textarea>
+        </div>
+        <button>Send</button>
+    </form>
 </body>
 </html>
