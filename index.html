@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form>
         <div>
-            <label for="name">Enter Your Name</label>
+            <label for="name">Enter Your Name *</label>
             <input id="name" required>
         </div>
         <div>
-            <label for="email">Enter Your Email</label>
+            <label for="email">Enter Your Email *</label>
             <input id="email" type="email" required>
         </div>
         <div>
-            <label for="department">Pick Your Department</label>
+            <label for="department">Pick Your Department *</label>
             <select id="department">
                 <option>Sales</option>
                 <option>Marketing</option>
@@ -26,10 +27,12 @@
             </select>
         </div>
         <div>
-            <label for="message">Enter Your Message</label>
+            <label for="message">Enter Your Message *</label>
             <textarea id="message" required></textarea>
         </div>
-        <button>Send</button>
+        <div class="button-container">
+            <button>Send</button>
+        </div>
     </form>
 </body>
 </html>
